@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2024 The LineageOS Project
+     Copyright (C) 2024-2025 The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -291,27 +291,6 @@
         <item>957.1</item>
         <item>971.4</item>
         <item>985.7</item>
-        <item>1000.0</item>
-    </array>
-
-    <!-- An array describing the screen's backlight values corresponding to the brightness
-         values in the config_screenBrightnessNits array.
-
-         This array should be equal in size to config_screenBrightnessBacklight. -->
-    <integer-array name="config_screenBrightnessBacklight">
-        <item>1</item>
-        <item>255</item>
-    </integer-array>
-
-    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
-         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
-         should be measured with an all white image while the display is in the fully on state.
-         Note that this value should *not* reflect the maximum brightness value for any high
-         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
-
-         This array should be equal in size to config_screenBrightnessBacklight -->
-    <array name="config_screenBrightnessNits">
-        <item>4.1</item>
         <item>1000.0</item>
     </array>
 
