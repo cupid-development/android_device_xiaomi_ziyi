@@ -14,6 +14,7 @@ $(call inherit-product, vendor/xiaomi/ziyi/ziyi-vendor.mk)
 PRODUCT_PACKAGES += \
     FrameworksResZiyi \
     SettingsProviderResZiyi \
+    SettingsResZiyi \
     SystemUIResZiyi \
     WifiResZiyi
 
