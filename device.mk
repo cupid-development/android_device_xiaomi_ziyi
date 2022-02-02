@@ -11,6 +11,9 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 $(call inherit-product, vendor/xiaomi/ziyi/ziyi-vendor.mk)
 
 # Audio
+PRODUCT_PACKAGES += \
+    firmware_aw_cali.bin_symlink
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_diwali_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_diwali/mixer_paths_diwali_idp.xml \
     $(LOCAL_PATH)/audio/resourcemanager_diwali_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_diwali/resourcemanager_diwali_idp.xml \
