@@ -12,5 +12,8 @@ include vendor/xiaomi/ziyi/BoardConfigVendor.mk
 
 DEVICE_PATH := device/xiaomi/ziyi
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+
 # Screen density
 TARGET_SCREEN_DENSITY := 440
