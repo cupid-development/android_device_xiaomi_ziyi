@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<device name="Android">
+    <item name="none">0</item>
+
+    <!-- Additional power used when screen is turned on at minimum brightness -->
+    <item name="screen.on">61.8</item>
+
+    <!-- Additional power used when screen is at maximum brightness, compared to
+         screen at minimum brightness -->
+    <item name="screen.full">422.21</item>
+    <array name="cpu.clusters.cores">
+        <value>4</value>
+        <value>3</value>
+        <value>1</value>
+    </array>
+
+    <!-- Different CPU speeds as reported in
+         /sys/devices/system/cpu/cpu0/cpufreq/stats/scaling_available_frequencies -->
+    <array name="cpu.core_speeds.cluster0">
+        <value>614400</value>
+        <value>806400</value>
+        <value>902400</value>
+        <value>1094400</value>
+        <value>1228800</value>
+        <value>1363200</value>
+        <value>1555200</value>
+        <value>1651200</value>
+        <value>1804800</value>
+    </array>
+
+    <!-- Additional power used by a CPU from cluster 0 when running at different
+         speeds. Currently this measurement also includes cluster cost. -->
+    <array name="cpu.core_power.cluster0">
+        <value>76.16</value>
+        <value>78.41</value>
+        <value>78.17</value>
+        <value>79.14</value>
+        <value>81.78</value>
+        <value>82.37</value>
+        <value>82.33</value>
+        <value>102.16</value>
+        <value>108.82</value>
+    </array>
+
+    <!-- Different CPU speeds as reported in
+         /sys/devices/system/cpu/cpu4/cpufreq/stats/scaling_available_frequencies -->
+    <array name="cpu.core_speeds.cluster1">
+        <value>652800</value>
+        <value>940800</value>
+        <value>1132800</value>
+        <value>1382400</value>
+        <value>1555200</value>
+        <value>1651200</value>
+        <value>1804800</value>
+        <value>2054400</value>
+        <value>2208000</value>
+        <value>2361600</value>
+    </array>
+
+    <!-- Additional power used by a CPU from cluster 1 when running at different
+         speeds. Currently this measurement also includes cluster cost. -->
+    <array name="cpu.core_power.cluster1">
+        <value>73.24</value>
+        <value>99.3</value>
+        <value>116.92</value>
+        <value>145.94</value>
+        <value>171.77</value>
+        <value>182.9</value>
+        <value>248.73</value>
+        <value>293.65</value>
+        <value>325.07</value>
+        <value>419.1</value>
+    </array>
+    <array name="cpu.core_speeds.cluster2">
+        <value>768000</value>
+        <value>940800</value>
+        <value>1094400</value>
+        <value>1286400</value>
+        <value>1401600</value>
+        <value>1612800</value>
+        <value>1766400</value>
+        <value>1977600</value>
+        <value>2169600</value>
+        <value>2361600</value>
+        <value>2400000</value>
+    </array>
+    <array name="cpu.core_power.cluster2">
+        <value>92.88</value>
+        <value>103.92</value>
+        <value>122.94</value>
+        <value>139.72</value>
+        <value>155.37</value>
+        <value>178.05</value>
+        <value>212.75</value>
+        <value>244.24</value>
+        <value>336.98</value>
+        <value>369.2</value>
+        <value>378.31</value>
+    </array>
+
+    <!-- Additional power consumption by CPU excluding cluster and core when
+       running -->
+    <item name="cpu.active">7.6</item>
+
+    <!-- Current when CPU is idle -->
+    <item name="cpu.idle">7.21</item>
+
+    <!-- Power consumption when CPU is suspended -->
+    <item name="cpu.suspend">0</item>
+
+    <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
+    <item name="battery.capacity">4500</item>
+    <item name="wifi.on">0.05</item>
+    <item name="wifi.active">355.49</item>
+    <item name="wifi.scan">38.78</item>
+
+    <!-- Apps which primarily work with audio or music, such as music players. -->
+    <item name="audio">43.57</item>
+
+    <!-- Apps which primarily work with video or movies, such as streaming video apps. -->
+    <item name="video">89.98</item>
+    <item name="camera.flashlight">149.94</item>
+    <item name="camera.avg">650.68</item>
+    <item name="gps.on">59.39</item>
+    <item name="radio.active">344.02</item>
+    <item name="radio.scanning">111.05</item>
+    <array name="radio.on">
+        <value>2.68</value>
+        <value>1.3</value>
+    </array>
+    <item name="modem.controller.idle">6</item>
+    <item name="modem.controller.rx">180</item>
+    <item name="modem.controller.tx">186</item>
+    <item name="modem.controller.voltage">3700</item>
+
+    <!-- Memory bandwidth power values in mA at the rail. There must be one value
+         for each bucket defined in the device tree. -->
+    <array name="memory.bandwidths">
+        <value>17</value>
+    </array>
+
+    <!-- Idle Receive current for wifi radio in mA. 0 by default -->
+    <item name="wifi.controller.idle">1</item>
+
+    <!-- Rx current for wifi radio in mA. 0 by default -->
+    <item name="wifi.controller.rx">152</item>
+
+    <!-- Tx current for wifi radio in mA. 0 by default -->
+    <item name="wifi.controller.tx">190</item>
+    <array name="wifi.controller.tx_levels">
+        <value>1</value>
+    </array>
+
+    <!-- Operating volatage for wifi radio in mV. 0 by default -->
+    <item name="wifi.controller.voltage">3700</item>
+    <array name="wifi.batchedscan">
+        <value>.0001</value>
+        <value>.001</value>
+        <value>.01</value>
+        <value>.1</value>
+        <value>1</value>
+    </array>
+    <item name="bluetooth.active">7.15</item>
+    <item name="bluetooth.on">0.42</item>
+    <item name="bluetooth.controller.voltage">3700</item>
+</device>
