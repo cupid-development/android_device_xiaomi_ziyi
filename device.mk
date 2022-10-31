@@ -12,6 +12,7 @@ $(call inherit-product, vendor/xiaomi/ziyi/ziyi-vendor.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
+    ApertureResZiyi \
     FrameworksResZiyi \
     SettingsProviderResZiyi \
     SystemUIResZiyi \
