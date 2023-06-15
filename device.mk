@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureResZiyi \
     FrameworksResZiyi \
+    NfcResZiyi \
     SettingsProviderResZiyi \
     SettingsProviderResZiyiCN \
     SettingsResZiyi \
