@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     NfcResZiyi \
     SettingsProviderResZiyi \
     SettingsProviderResZiyiCN \
+    SettingsResZiyi \
     SystemUIResZiyi \
     WifiResZiyi \
     WifiResZiyiCN
