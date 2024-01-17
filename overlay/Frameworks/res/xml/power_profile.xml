@@ -7,11 +7,11 @@
     <item name="none">0</item>
 
     <!-- Additional power used when screen is turned on at minimum brightness -->
-    <item name="screen.on">61.8</item>
+    <item name="screen.on.display0">61.8</item>
 
     <!-- Additional power used when screen is at maximum brightness, compared to
          screen at minimum brightness -->
-    <item name="screen.full">422.21</item>
+    <item name="screen.full.display0">422.21</item>
     <array name="cpu.clusters.cores">
         <value>4</value>
         <value>3</value>
