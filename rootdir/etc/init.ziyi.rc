@@ -1,0 +1,2 @@
+on property:ro.boot.hwc=CN
+    setprop bluetooth.device.default_name "Xiaomi Civi 2"
