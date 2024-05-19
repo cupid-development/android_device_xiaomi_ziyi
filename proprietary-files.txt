@@ -1428,6 +1428,11 @@ vendor/firmware/a662_zap.elf
 vendor/firmware/a662_zap.mbn
 vendor/firmware/a662_zap.mdt
 
+# NFC configs
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+
 # Sensors
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/diwali_ak991x_0.json
