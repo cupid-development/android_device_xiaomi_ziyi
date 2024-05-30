@@ -14,9 +14,6 @@ function blob_fixup() {
         vendor/etc/camera/ziyi_enhance_motiontuning.xml|vendor/etc/camera/ziyi_motiontuning.xml)
             sed -i 's/xml=version/xml version/g' "${2}"
             ;;
-        vendor/etc/init/hw/init.batterysecret.rc)
-            sed -i 's/on charger/on property:init.svc.vendor.charger=running/g' "${2}"
-            ;;
     esac
 }
 
