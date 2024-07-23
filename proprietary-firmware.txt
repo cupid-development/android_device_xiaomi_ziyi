@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from ziyi V816.0.5.0.ULLEUXM
+## are from ziyi V816.0.6.0.ULLMIXM
 
 abl.img;AB
 aop.img;AB
