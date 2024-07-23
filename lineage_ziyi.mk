@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022-2023 The LineageOS Project
+# Copyright (C) 2022-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -20,10 +20,10 @@ PRODUCT_SYSTEM_NAME := ziyi_global
 PRODUCT_SYSTEM_DEVICE := ziyi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="ziyi_global-user 14 UKQ1.231003.002 V816.0.5.0.ULLEUXM release-keys" \
+    PRIVATE_BUILD_DESC="ziyi_global-user 14 UKQ1.231003.002 V816.0.6.0.ULLMIXM release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := Xiaomi/ziyi_global/ziyi:14/UKQ1.231003.002/V816.0.5.0.ULLEUXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/ziyi_global/ziyi:14/UKQ1.231003.002/V816.0.6.0.ULLMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
