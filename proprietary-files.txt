@@ -1346,6 +1346,21 @@ vendor/lib64/camera/com.qti.tuned.ziyi_sunny_imx766_wide_i.bin
 vendor/lib64/camera/com.qti.tuned.ziyi_sunny_imx766_wide_ii.bin
 vendor/lib64/hw/com.qti.chi.override.so
 
+# Camera sensors (CN) - from HyperOS V816.0.4.0.ULLCNXM
+vendor/lib/camera/com.qti.sensormodule.ziyi_ofilm_imx376k_ultra_i.bin|50d23941b288ce880983c33889c72708ac210908
+vendor/lib/camera/com.qti.sensormodule.ziyi_sunny_s5kgd2_front_i.bin|44c5c0959c12e4e52e82d6b5cb71bfbc5734ff7b
+vendor/lib/camera/com.qti.tuned.ziyi_ofilm_imx376k_ultra_i.bin|242f3af81aa53a7b6af649d8c150e6a9ecdb1677
+vendor/lib/camera/com.qti.tuned.ziyi_sunny_s5kgd2_front_i.bin|d24d66a06ac10c8cabe366699c26a138fdb780eb
+vendor/lib64/camera/com.qti.actuator.ziyi_sunny_s5kgd2_dw9800v_front_actuator_i.so|077a2e7d974751b3251a05249c57b7a11edca6fa
+vendor/lib64/camera/com.qti.eeprom.ziyi_ofilm_imx376k_p24c64f_ultra_i_eeprom_i.so|4eeeb89fc1bec52b2b7943fdce87ab2aa5cb85af
+vendor/lib64/camera/com.qti.eeprom.ziyi_sunny_s5kgd2_p24c64f_front_eeprom_i.so|4603caa8ecf718b52eca0bb5aa8f9284534f5c71
+vendor/lib64/camera/com.qti.sensor.ziyi_ofilm_imx376k_ultra_i.so|883e94ec98cb77af745bc0bb84c707f004c27081
+vendor/lib64/camera/com.qti.sensor.ziyi_sunny_s5kgd2_front_i.so|e2365f6fea01bf3d894e4d409524179cc383937b
+vendor/lib64/camera/com.qti.sensormodule.ziyi_ofilm_imx376k_ultra_i.bin|50d23941b288ce880983c33889c72708ac210908
+vendor/lib64/camera/com.qti.sensormodule.ziyi_sunny_s5kgd2_front_i.bin|44c5c0959c12e4e52e82d6b5cb71bfbc5734ff7b
+vendor/lib64/camera/com.qti.tuned.ziyi_ofilm_imx376k_ultra_i.bin|242f3af81aa53a7b6af649d8c150e6a9ecdb1677
+vendor/lib64/camera/com.qti.tuned.ziyi_sunny_s5kgd2_front_i.bin|d24d66a06ac10c8cabe366699c26a138fdb780eb
+
 # Computer vision firmware
 vendor/firmware/evass-lt-21.b00
 vendor/firmware/evass-lt-21.b01
