@@ -41,6 +41,7 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
 BOOT_KERNEL_MODULES += $(device_second_stage_modules)
 
 # Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 

@@ -1,9 +1,9 @@
-# Bluetooth
-bluetooth.device.default_name=Xiaomi 13 Lite
-
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=540|2163|95
 
 # Sensors
 ro.vendor.sensors.xiaomi.udfps=true
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system

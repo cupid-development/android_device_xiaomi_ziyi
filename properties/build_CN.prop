@@ -1,0 +1,9 @@
+# Chinese model
+bluetooth.device.default_name=Xiaomi Civi 2
+vendor.usb.product_string=Xiaomi Civi 2
+ro.product.odm.brand=Xiaomi
+ro.product.odm.device=ziyi
+ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.model=2209129SC
+ro.product.odm.name=ziyi
+ro.product.mod_device=ziyi
