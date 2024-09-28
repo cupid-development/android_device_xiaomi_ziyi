@@ -1283,7 +1283,6 @@ vendor/etc/mdss_dsi_l9s_42_02_0a_mp_amoled_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_l9s_42_02_0c_mp_amoled_dsc_cmd_mi.xml
 
 # Fingerprint
-odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 vendor/lib64/libgf_hal.so
 
