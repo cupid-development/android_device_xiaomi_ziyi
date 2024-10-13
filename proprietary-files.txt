@@ -894,7 +894,6 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/libQnnHtp.so
-vendor/lib64/camera/libQnnHtpV69Skel.so
 vendor/lib64/camera/libQnnHtpV69Stub.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.anchor.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so
