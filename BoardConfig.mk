@@ -27,7 +27,10 @@ device_second_stage_modules := \
     xm_pd_mngr.ko \
     rt_pd_manager.ko \
     tcpci_drv.ko \
-    tcpc_rt1711h.ko
+    tcpc_rt1711h.ko \
+    synaptics_tcm_core_module.ko \
+    synaptics_tcm_reflash.ko \
+    synaptics_tcm_spi.ko
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
 BOARD_VENDOR_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
