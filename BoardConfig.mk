@@ -14,8 +14,6 @@ DEVICE_PATH := device/xiaomi/ziyi
 
 # Kernel
 device_second_stage_modules := \
-    goodix_fod.ko \
-    qcom_pm8008-regulator.ko \
     class_dual_role.ko \
     ln8000_drv.ko \
     bq27z561_drv.ko \
@@ -29,11 +27,7 @@ device_second_stage_modules := \
     xm_pd_mngr.ko \
     rt_pd_manager.ko \
     tcpci_drv.ko \
-    tcpc_rt1711h.ko \
-    synaptics_tcm_core_module.ko \
-    synaptics_tcm_reflash.ko \
-    synaptics_tcm_spi.ko \
-    aw862xx_haptic.ko
+    tcpc_rt1711h.ko
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
 BOARD_VENDOR_KERNEL_MODULES_LOAD += $(device_second_stage_modules)
