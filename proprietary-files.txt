@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from ziyi V816.0.6.0.ULLMIXM
+# All unpinned blobs below are extracted from ziyi V816.0.11.0.ULLMIXM
 
 # Current blobs with ELF checks disabled:
 # audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
