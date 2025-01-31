@@ -1,10 +1,8 @@
 # All unpinned blobs below are extracted from ziyi V816.0.11.0.ULLMIXM
 
 # ACDB
-vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp
-vendor/etc/acdbdata/diwali_parrot_qrd/QRD_diwali_parrot_acdb_cal.acdb
-vendor/etc/acdbdata/diwali_parrot_qrd/QRD_diwali_parrot_workspaceFileXml.qwsp
+vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb:vendor/etc/acdbdata/waipio_mtp/Forte_acdb_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:vendor/etc/acdbdata/waipio_mtp/Forte_workspaceFileXml.qwsp
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
