@@ -743,9 +743,13 @@
         </devicepp>
         <!-- OUT Bluetooth A2DP DevicePPs -->
         <devicepp id="PAL_DEVICE_OUT_BLUETOOTH_A2DP">
-            <keys_and_values StreamType="PAL_STREAM_COMPRESSED,PAL_STREAM_DEEP_BUFFER,PAL_STREAM_LOW_LATENCY,PAL_STREAM_PCM_OFFLOAD">
+            <keys_and_values StreamType="PAL_STREAM_COMPRESSED,PAL_STREAM_DEEP_BUFFER,PAL_STREAM_PCM_OFFLOAD">
                 <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC -->
                 <graph_kv key="0xAC000000" value="0xAC000002"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_LOW_LATENCY">
+                <!-- DEVICEPP_RX - DEVICEPP_RX_AUDIO_MBDRC_DEFAULT -->
+                <graph_kv key="0xAC000000" value="0xAC000009"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOIP_RX" >
                 <!-- DEVICEPP_RX - DEVICEPP_RX_VOIP_MBDRC -->
