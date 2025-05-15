@@ -1106,7 +1106,7 @@ vendor/lib64/libvidhance_super_stabilization.so
 vendor/lib64/libxmi_hdr_bokeh.so
 vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
-vendor/lib64/libxmi_high_dynamic_range_cdsp.so
+vendor/lib64/libxmi_high_dynamic_range_cdsp.so;STRIP_DEBUG_SECTIONS
 vendor/lib64/libxmi_slow_motion_mein.so
 vendor/lib64/libxmi_slow_motion_triger.so
 vendor/lib64/vendor.qti.hardware.camera.aon@1.0-service-impl.so
