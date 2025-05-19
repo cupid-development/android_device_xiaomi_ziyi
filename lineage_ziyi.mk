@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/ziyi/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Device config
+TARGET_BUILD_APERTURE_CAMERA := false
+
 PRODUCT_NAME := lineage_ziyi
 PRODUCT_DEVICE := ziyi
 PRODUCT_MANUFACTURER := Xiaomi
