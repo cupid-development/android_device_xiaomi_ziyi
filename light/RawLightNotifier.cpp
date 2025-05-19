@@ -90,7 +90,7 @@ void RawLightNotifier::notify() {
             continue;
         }
 
-        struct disp_event_resp* response = parseDispEvent(disp_fd_.get());
+        std::shared_ptr<disp_event_resp> response = parseDispEvent(disp_fd_.get());
         if (response == nullptr) {
             continue;
         }
