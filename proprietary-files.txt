@@ -1258,8 +1258,6 @@ vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod
 vendor/lib64/libgf_hal.so
 
 # Graphics (Adreno firmware)
-vendor/firmware/a660_sqe.fw
-vendor/firmware/a662_gmu.bin
 vendor/firmware/a662_zap.b00
 vendor/firmware/a662_zap.b01
 vendor/firmware/a662_zap.b02
