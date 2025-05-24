@@ -211,6 +211,10 @@
             </usecase>
             <usecase>
                 <name>PAL_STREAM_DEEP_BUFFER</name>
+                <custom-config key="camcorder_landscape">
+                    <channels>4</channels>
+                    <snd_device_name>handset-stereo-dmic-ef</snd_device_name>
+                </custom-config>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_VOIP_TX</name>
