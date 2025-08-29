@@ -119,6 +119,8 @@
     </config_voice>
     <low_power_vote_streams>
         <stream_type>PAL_STREAM_VOICE_UI</stream_type>
+        <stream_type>PAL_STREAM_ACD</stream_type>
+        <stream_type>PAL_STREAM_ULTRASOUND</stream_type>
     </low_power_vote_streams>
     <group_device_cfg>
         <upd_rx>
@@ -382,7 +384,7 @@
             <id>PAL_DEVICE_IN_PROXY</id>
             <back_end_name>PCM_RT_PROXY-TX-1</back_end_name>
             <max_channels>2</max_channels>
-            <channels>2</channels>
+            <channels>1</channels>
             <snd_device_name>afe-proxy</snd_device_name>
             <usecase>
                 <name>PAL_STREAM_PROXY</name>
@@ -433,9 +435,7 @@
             <back_end_name>MI2S-LPAIF-TX-PRIMARY</back_end_name>
             <snd_device_name>ext_ec_ref_tx</snd_device_name>
             <max_channels>2</max_channels>
-            <channels>2</channels>
-            <bit_width>16</bit_width>
-            <samplerate>48000</samplerate>
+            <channels>1</channels>
         </in-device>
         <out-device>
             <id>PAL_DEVICE_NONE</id>
@@ -482,10 +482,28 @@
                 <snd_device_name>speaker-mono-2</snd_device_name>
             </usecase>
             <usecase>
-                <name>PAL_STREAM_VOIP_RX</name>
-                <priority>3</priority>
+                <name>PAL_STREAM_LOW_LATENCY</name>
                 <channels>1</channels>
-                <snd_device_name>speaker-mono-2</snd_device_name>
+                <sidetone_mode>HW</sidetone_mode>
+                <channels>1</channels>
+                <custom-config key="speaker-top">
+                    <channels>1</channels>
+                    <snd_device_name>speaker-top</snd_device_name>
+                </custom-config>
+                <custom-config key="speaker-bot">
+                    <channels>1</channels>
+                    <snd_device_name>speaker-bot</snd_device_name>
+                </custom-config>
+                <custom-config key="speaker-default">
+                    <channels>1</channels>
+                    <snd_device_name>speaker</snd_device_name>
+                </custom-config>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_VOIP_RX</name>
+                <channels>1</channels>
+                <priority>3</priority>
+                <snd_device_name>speaker</snd_device_name>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_ULTRASOUND</name>
@@ -501,6 +519,7 @@
             <!-- To enable external EC reference the flag extec_ref_enabled must be added as 1 -->
             <ext_ec_ref_enabled>0</ext_ec_ref_enabled>
             <samplerate>48000</samplerate>
+            <!--NEED CHK-->
             <bit_width>24</bit_width>
             <fractional_sr>0</fractional_sr>
             <snd_device_name>handset</snd_device_name>
@@ -514,6 +533,9 @@
           <usecase>
               <name>PAL_STREAM_VOIP_RX</name>
               <priority>3</priority>
+              <custom-config key="HAC">
+                 <snd_device_name>voice-handset-hac</snd_device_name> <!-- override sound device name with HAC handset for voip -->
+              </custom-config>
           </usecase>
           <usecase>
               <name>PAL_STREAM_ULTRASOUND</name>
@@ -526,6 +548,7 @@
             <back_end_name>CODEC_DMA-LPAIF_RXTX-RX-0</back_end_name>
             <max_channels>2</max_channels>
             <channels>2</channels>
+            <samplerate>48000</samplerate>
             <bit_width>24</bit_width>
             <fractional_sr>1</fractional_sr>
             <snd_device_name>headphones</snd_device_name>
@@ -736,7 +759,6 @@
             <name>PAL_STREAM_VOIP_TX</name>
                 <policies>
                     <ec_ref>
-                        <disabled_stream>PAL_STREAM_LOW_LATENCY</disabled_stream>
                         <disabled_stream>PAL_STREAM_GENERIC</disabled_stream>
                     </ec_ref>
                 </policies>
@@ -785,15 +807,6 @@
                     <ec_ref>
                         <disabled_stream>PAL_STREAM_COMPRESSED</disabled_stream>
                         <disabled_stream>PAL_STREAM_ULTRA_LOW_LATENCY</disabled_stream>
-                        <disabled_stream>PAL_STREAM_LOW_LATENCY</disabled_stream>
-                        <disabled_stream>PAL_STREAM_GENERIC</disabled_stream>
-                    </ec_ref>
-                </policies>
-        </in_stream>
-        <in_stream>
-            <name>PAL_STREAM_SENSOR_PCM_DATA</name>
-                <policies>
-                    <ec_ref>
                         <disabled_stream>PAL_STREAM_LOW_LATENCY</disabled_stream>
                         <disabled_stream>PAL_STREAM_GENERIC</disabled_stream>
                     </ec_ref>
