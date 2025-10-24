@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2025-08-01
+
 # Light
 TARGET_SENSOR_NOTIFIER_EXT := //device/xiaomi/ziyi:libsensor-notifier-ext-light
 
