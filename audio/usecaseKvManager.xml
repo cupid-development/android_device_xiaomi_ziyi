@@ -84,11 +84,7 @@
             </keys_and_values>
         </stream>
         <!-- Deep Buffer stream -->
-        <!--
-            This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
-            so fall back to the deep buffer values.
-        -->
-        <stream type="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_VOICE_RECOGNITION">
+        <stream type="PAL_STREAM_DEEP_BUFFER">
             <keys_and_values Direction="RX" Instance="1">
                 <!-- STREAMRX - PCM_DEEP_BUFFER -->
                 <graph_kv key="0xA1000000" value="0xA1000001"/>
@@ -112,6 +108,18 @@
                 <graph_kv key="0xB1000000" value="0xB1000001"/>
                 <!-- INSTANCE - INSTANCE_2 -->
                 <graph_kv key="0xAB000000" value="0x2"/>
+            </keys_and_values>
+        </stream>
+        <!--
+            This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
+            so fall back to the deep buffer values.
+        -->
+        <stream type="PAL_STREAM_VOICE_RECOGNITION">
+            <keys_and_values Direction="TX" Instance="1">
+                <!-- STREAMTX - PCM_RECORD -->
+                <graph_kv key="0xB1000000" value="0xB1000001"/>
+                <!-- INSTANCE - INSTANCE_1 -->
+                <graph_kv key="0xAB000000" value="0x1"/>
             </keys_and_values>
         </stream>
         <!-- Compressed-playback stream -->
