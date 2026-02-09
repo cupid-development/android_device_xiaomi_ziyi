@@ -111,15 +111,18 @@
             </keys_and_values>
         </stream>
         <!--
-            This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
-            so fall back to the deep buffer values.
+            Deep buffer and voice recognition both use PCM_RECORD but
+            they can be in use simultaneously. To avoid a conflict,
+            voice recognition uses instance 2 under the assumption that
+            there will never be two deep buffer instances and one voice
+            recognition instance.
         -->
         <stream type="PAL_STREAM_VOICE_RECOGNITION">
             <keys_and_values Direction="TX" Instance="1">
                 <!-- STREAMTX - PCM_RECORD -->
                 <graph_kv key="0xB1000000" value="0xB1000001"/>
-                <!-- INSTANCE - INSTANCE_1 -->
-                <graph_kv key="0xAB000000" value="0x1"/>
+                <!-- INSTANCE - INSTANCE_2 -->
+                <graph_kv key="0xAB000000" value="0x2"/>
             </keys_and_values>
         </stream>
         <!-- Compressed-playback stream -->
