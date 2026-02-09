@@ -841,11 +841,13 @@
         </devicepp>
         <!-- IN Handset MIC DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_HANDSET_MIC">
-            <!--
-                This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
-                so fall back to the deep buffer values.
-            -->
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_VOICE_RECOGNITION">
+            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_RECORDING_ASR  -->
+                <graph_kv key="0xAD000000" value="0xAD000074"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER">
                 <!-- DEVICETX - HANDSETMIC -->
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->

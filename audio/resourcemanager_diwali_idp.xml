@@ -154,6 +154,12 @@
                 <name>PAL_STREAM_DEEP_BUFFER</name>
             </usecase>
             <usecase>
+                <name>PAL_STREAM_VOICE_RECOGNITION</name>
+                <channels>2</channels>
+                <samplerate>16000</samplerate>
+                <snd_device_name>va-mic-asr</snd_device_name>
+            </usecase>
+            <usecase>
                 <name>PAL_STREAM_VOIP_TX</name>
                 <priority>2</priority>
             </usecase>
