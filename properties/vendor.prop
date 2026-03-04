@@ -1,6 +1,9 @@
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=540|2163|95
+persist.vendor.sys.fp.expolevel=0x88
+persist.vendor.sys.fp.fod.location.X_Y=445,2068
+persist.vendor.sys.fp.fod.size.width_height=190,190
 
 # Sensors
 ro.vendor.sensors.xiaomi.udfps=true
