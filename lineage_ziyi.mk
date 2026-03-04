@@ -17,8 +17,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 2210129SG
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="ziyi_global-user 15 AQ3A.240912.001 OS2.0.5.0.VLLMIXM release-keys" \
-    BuildFingerprint=Xiaomi/ziyi_global/ziyi:15/AQ3A.240912.001/OS2.0.5.0.VLLMIXM:user/release-keys \
+    BuildDesc="ziyi_global-user 15 AQ3A.240912.001 OS2.0.206.0.VLLMIXM release-keys" \
+    BuildFingerprint=Xiaomi/ziyi_global/ziyi:15/AQ3A.240912.001/OS2.0.206.0.VLLMIXM:user/release-keys \
     DeviceProduct=ziyi \
     SystemName=ziyi_global
 
